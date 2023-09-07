@@ -13,6 +13,13 @@ CounterTest >> testCountIsSetAndRead [
 ]
 
 { #category : #tests }
+CounterTest >> testCounterWellInitialized [
+	self
+		assert: (Counter new increment; increment; count)
+		equals: 2
+]
+
+{ #category : #tests }
 CounterTest >> testDecrement [
 	| c |
 	c := Counter new.
