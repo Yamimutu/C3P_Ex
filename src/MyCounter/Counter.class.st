@@ -25,3 +25,18 @@ Counter >> count: anInteger [
 
 	count := anInteger
 ]
+
+{ #category : #API }
+Counter >> decrement [
+	count := count - 1
+]
+
+{ #category : #accessing }
+Counter >> increment [
+	count := count + 1
+]
+
+{ #category : #initialization }
+Counter >> initialize [
+	count:= 0
+]
