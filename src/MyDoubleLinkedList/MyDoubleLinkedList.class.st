@@ -133,6 +133,11 @@ MyDoubleLinkedList >> size [
 ]
 
 { #category : #accessing }
+MyDoubleLinkedList >> tail [
+	^ tail
+]
+
+{ #category : #accessing }
 MyDoubleLinkedList >> tailValue [
 	^ tail value
 ]
